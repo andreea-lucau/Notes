@@ -1,6 +1,7 @@
 # Web Operations
 
 ## Monitoring
+
 Availability = Update / (Uptime + Downtime)
 
 Availability is influenced by 4 parameters:
@@ -23,6 +24,7 @@ Things to look out for when monitoring a system:
 * credibility
 
 ## Dealing with Traffic Spikes
+
 Reactive cache can be dangerous - you will have a spike in cache miss when the
 entry expires.
 
