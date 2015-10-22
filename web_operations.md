@@ -34,3 +34,22 @@ Lessons learned:
 * load test the production system
 * think about the whole stack(both software and hardware) and rethink the whole
   application if needed
+
+## Dev ond Ops Collaboration and Cooperation
+
+If devs and ops are completely separated, they will not be able to help
+eachother and share information. Share responsability for reliability produces
+better results.If devs also have an oncall rotation, they are more incentives
+to think about reliability.
+
+Advises for optimizing the deployment process:
+
+* the build and deployment should be repeatable and fully automated
+* have a good staging environment
+* make deployment as fast as possible - the order of minutes
+
+Example of tools that can be shared between devs and ops:
+
+* live debugging tools - the extra information needed by a dev when building a
+  system is often the same needed by an ops when debugging the live system
+* feature flags
