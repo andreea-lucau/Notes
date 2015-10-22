@@ -23,6 +23,9 @@ Things to look out for when monitoring a system:
 * credibility
 
 ## Dealing with Traffic Spikes
+Reactive cache can be dangerous - you will have a spike in cache miss when the
+entry expires.
+
 Lessons learned:
 
 * plan for 5 years ahead
