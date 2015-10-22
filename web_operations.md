@@ -21,3 +21,11 @@ Things to look out for when monitoring a system:
 * quality
 * context
 * credibility
+
+## Dealing with Traffic Spikes
+Lessons learned:
+
+* plan for 5 years ahead
+* load test the production system
+* think about the whole stack(both software and hardware) and rethink the whole
+  application if needed
