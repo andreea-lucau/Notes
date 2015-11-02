@@ -53,3 +53,39 @@ Example of tools that can be shared between devs and ops:
 * live debugging tools - the extra information needed by a dev when building a
   system is often the same needed by an ops when debugging the live system
 * feature flags
+
+## How Your Visitors Feel - User Facing Metrics
+Here are the type of metrics that matter:
+
+* web analytics - see if the visitors did what you wanted them to
+* web performance
+* web interaction analytics - track how visitors interact with the site
+* voice of the customer - survey visitors for satisfaction
+
+What makes a site slow?
+
+* the time the server takes to process the request
+* time spend on the network - DNS, HTTP redirects, send the request, deliver
+  the response
+* time spend in the browser - the time it takes to load a page is a combination
+  of the number of objects, their size, the number that can be retrived
+  concurently and available bandwidth
+
+The are two ways of measuring page load delay:
+
+* synthetic monitoring (active) - using probes
+
+  ** it is useful when you need to know something before users sees the content
+  ** useful for measuring the health of third party components
+
+* real user monitoring (passive) - it watches visitors to a site, calculates
+  the speed with which they receive the page and then generate reports
+  It generates two types of reports
+  ** individual visitor reports
+  ** agreggate reports
+  These are the steps to configure RUM:
+  ** filter out unvated traffic
+  ** tell the system how to track individual users
+  ** tell the system how to assemble pages
+  ** identifiy errors
+  ** tell if what to watch for - pages, users, servers
