@@ -83,6 +83,7 @@ The are two ways of measuring page load delay:
   It generates two types of reports
   * individual visitor reports
   * agreggate reports
+
   These are the steps to configure RUM:
   * filter out unvated traffic
   * tell the system how to track individual users
