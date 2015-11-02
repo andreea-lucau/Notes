@@ -81,11 +81,11 @@ The are two ways of measuring page load delay:
 * real user monitoring (passive) - it watches visitors to a site, calculates
   the speed with which they receive the page and then generate reports
   It generates two types of reports
-  ** individual visitor reports
-  ** agreggate reports
+  * individual visitor reports
+  * agreggate reports
   These are the steps to configure RUM:
-  ** filter out unvated traffic
-  ** tell the system how to track individual users
-  ** tell the system how to assemble pages
-  ** identifiy errors
-  ** tell if what to watch for - pages, users, servers
+  * filter out unvated traffic
+  * tell the system how to track individual users
+  * tell the system how to assemble pages
+  * identifiy errors
+  * tell if what to watch for - pages, users, servers
