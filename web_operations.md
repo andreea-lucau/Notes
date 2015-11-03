@@ -90,3 +90,38 @@ The are two ways of measuring page load delay:
   * tell the system how to assemble pages
   * identifiy errors
   * tell if what to watch for - pages, users, servers
+
+### Building an SLA
+
+User-facing SLA has several components:
+
+* task being tested
+* metric being calculated - if you can't control it, it should not be in the
+  SLA
+* calculation - the recommended way is to use percentiles
+* valid times - this leave room for maintenance
+* test conditions
+* time span
+
+One method of measuring SLA is *Application Performance Index* or *Apdex* - it
+measures how often the applications performance and availability are
+acceptable.
+It has three ratings:
+
+* satistified
+* tolerating
+* frustrated
+
+For each transaction/loaded page, give the rating and them compute the score:
+
+score = (satisfied + tolerating / 2) / all
+
+### Web Analytics
+
+It is about tracking the things that drive success and identify what makes
+those things increase.
+
+Other aspects are analytics are:
+
+* web interaction analytics - focuses on usability and good interaction
+* voice of the customer - solicit feedback from visitors
